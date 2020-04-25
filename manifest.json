@@ -1,0 +1,16 @@
+{
+  "name": "Twiiter Creeper",
+  "version": "1.0",
+  "description": "Mark and report DM creeps",
+  "manifest_version": 2,
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["./src/jquery.min.js","./src/frontend.js"],
+      "css": [
+        "./assets/creeper.css"
+      ]
+    }
+  ]
+}
