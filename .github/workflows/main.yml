@@ -29,3 +29,6 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Create a Release
       uses: actions/create-release@v1
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
